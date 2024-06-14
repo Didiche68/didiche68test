@@ -1,8 +1,14 @@
-body {
-    font-family: Arial, sans-serif;
+/* Réinitialisation des marges et des rembourrages */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
+}
+
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f0f0f0; /* Couleur de fond générale */
 }
 
 header {
@@ -29,6 +35,9 @@ nav ul li a {
 
 section {
     padding: 2rem;
+    margin: 1rem 0;
+    background: #fff;
+    border-radius: 8px;
 }
 
 footer {
@@ -36,7 +45,31 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 }
+
+/* Style de la bannière */
+.banner {
+    background-image: url('étoilé.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.banner-content h1 {
+    color: #fff;
+}
+
+.banner-content p {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
