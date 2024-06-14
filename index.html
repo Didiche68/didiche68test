@@ -1,7 +1,119 @@
-<section id="home" style="background-image: url('étoilé.jpg'); background-size: cover; background-position: center; height: 500px; text-align: center; display: flex; flex-direction: column; justify-content: center;">
-    <div style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
-        <h1 style="color: #fff;">Yoo!</h1>
-        <p style="color: #fff; font-size: 1.2rem;">J'avais peu d'idée pour attirer l'attention d'une fille que je connais pas trop, vu que t'es dans l'univers du WEB je me suis dit que c'était une bonne idée de faire ça o/</p>
-        <p style="color: #fff; font-size: 1rem;">Je voulais juste te dire que ton travail en développement web m'impressionne beaucoup, et j'aimerais en savoir plus sur toi.</p>
-    </div>
-</section>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Didiche68 - Développeur Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section#home {
+            background-image: url('étoilé.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        section#home > div {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+        section#home h1 {
+            color: #fff;
+        }
+        section#home p {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+        section#home p:nth-child(3) {
+            font-size: 1rem;
+        }
+        section {
+            padding: 2rem;
+            margin: 1rem 0;
+            background: #fff;
+            border-radius: 8px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div>
+            <h1>Yoo!</h1>
+            <p>J'avais peu d'idée pour attirer l'attention d'une fille que je connais pas trop, vu que t'es dans l'univers du WEB je me suis dit que c'était une bonne idée de faire ça o/</p>
+            <p>Je voulais juste te dire que ton travail en développement web m'impressionne beaucoup, et j'aimerais en savoir plus sur toi.</p>
+        </div>
+    </section>
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Avec plus de X années d'expérience en développement web, je me spécialise dans les technologies modernes comme HTML5, CSS3, JavaScript, et les frameworks comme React et Vue.js.</p>
+    </section>
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="project">
+            <h3>Projet 1</h3>
+            <p>Un site de e-commerce complet avec une interface utilisateur intuitive.</p>
+        </div>
+        <div class="project">
+            <h3>Projet 2</h3>
+            <p>Application de gestion de tâches avec intégration de calendrier et notifications.</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <form>
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Didiche68. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
